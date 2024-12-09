@@ -27,6 +27,53 @@ body {
 main {
   flex-grow: 1;
 }
-main:has(.back-link) {
-  text-align: center;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-item {
+  list-style: none;
+}
+
+.info {
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+#loader {
+  display: block;
+  margin: 0 auto;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

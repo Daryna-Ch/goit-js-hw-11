@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="node_modules/simplelightbox/dist/simple-lightbox.min.css">
+    <link rel="stylesheet" href="node_modules/izitoast/dist/css/iziToast.min.css">
   </head>
   <body>
 
+<div class="container">
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search for images..." />
+    <button type="submit">Search</button>
+  </form>
+  <div id="loader" class="hidden"></div>
+  <ul id="gallery" class="gallery"></ul>
+</div>
 
     <script type="module" src="./main.js"></script>
   </body>
