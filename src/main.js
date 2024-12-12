@@ -1,7 +1,9 @@
-import { fetchImages } from './pixabay-api.js';
-import { renderImages, clearGallery } from './render-functions.js';
+import { fetchImages } from './js/pixabay-api.js';
+import { renderImages, clearGallery } from './js/render-functions.js';
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+import "izitoast/dist/css/iziToast.min.css";
+
+
 
 const searchForm = document.getElementById('search-form');
 const searchInput = document.getElementById('search-input');
