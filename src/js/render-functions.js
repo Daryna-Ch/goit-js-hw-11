@@ -24,6 +24,7 @@ export function renderImages(images) {
   gallery.innerHTML = markup;
 
   const lightbox = new SimpleLightbox('.gallery a');
+  // коли виношу в глобальний код ^, то галерея не відображається взагалі :(
   lightbox.refresh();
 }
 
