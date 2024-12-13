@@ -45,6 +45,14 @@ h3 {
   color: darkgreen;
 }
 
+form{
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
