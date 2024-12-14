@@ -1,7 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-
+const lightbox = new SimpleLightbox('.gallery a');
 
 export function renderImages(images) {
   const gallery = document.getElementById('gallery');
@@ -23,8 +23,6 @@ export function renderImages(images) {
     .join('');
   gallery.innerHTML = markup;
 
-  const lightbox = new SimpleLightbox('.gallery a');
-  // коли виношу в глобальний код ^, то галерея не відображається взагалі :(
   lightbox.refresh();
 }
 
